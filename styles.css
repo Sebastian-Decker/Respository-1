@@ -3,6 +3,18 @@ body {
     background-color: #402AAF;
     color: #ECFF01;
 }
+#main {
+    margin: 0%;
+}
+#banner {
+    background-image: "";
+    background-color: "";
+    width: 40%;
+    height: 2cm;
+    position: relative;
+    margin: auto;
+    z-index: 2;
+}
 h1 {
     color: #ECFF01;
     text-align: center;
@@ -28,4 +40,9 @@ h3 {
 }
 p6 {
     color: #000000;
+}
+#large-image {
+    background-color: gray;
+    height: 10cm;
+    width: 100%;
 }
