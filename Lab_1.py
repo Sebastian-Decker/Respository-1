@@ -5,11 +5,12 @@ print("Sebastian Decker")
 print("put the degrees in celsius you would like to convert")
 C = int(input())
 
-result = C * 1.8 + 32
+F = C * 1.8 + 32
 
-print(result)
+#print(F)
+print(f'{C} * 1.8 + 32 = {F}')
 
-#part 3
+"""#part 3
 import turtle
 window = turtle.Screen()
 window.title("pentagon")
@@ -33,26 +34,31 @@ drawing_turtle.forward(100)
 drawing_turtle.left(72)
 
 turtle.done()
-
-"""#part 4
+"""
+#part 4
 import turtle
 
 myPen = turtle.Turtle()
 myPen.ht()
 myPen.speed(5)
 myPen.pencolor('orange')
-"""
+
 """
 Ask for 3 starting points of the triangle, named point_1, point_2, point_3
 """
-"""point_1 = 1
-point_2 = 2
-point_3 = 0
+def get_xy_corordinate():
+     x, y = input('Enter the x and the y coordinates').split(',')
+     return int(x), int(y)
+
+point_1 = get_xy_corordinate
+point_2 = get_xy_corordinate
+point_3 = get_xy_corordinate
 
 points = [point_1, point_2, point_3] #size of triangle
 
 def getMid(p1,p2):
-    midpoint = 3
+    midpoint = [(p1[0] + p2[0]) / 2, (p1[1] + p2[1]) / 2]
+    #midpoint = tuple(map(lambda x, y: (x + y) /2, p1, p2))
     return midpoint
 
 def triangle(points,depth):
@@ -80,8 +86,7 @@ def triangle(points,depth):
 
 
 # ASK FOR THE DEPTH OF TRIANGLE
-depth = 0
+depth = int(input('Enter the num of interactions'))
 triangle(points, depth)
 
 turtle.done()
-"""
