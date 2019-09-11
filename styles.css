@@ -46,3 +46,7 @@ p6 {
     height: 10cm;
     width: 100%;
 }
+.small {
+    width: 400px;
+    height: 400px;
+}
