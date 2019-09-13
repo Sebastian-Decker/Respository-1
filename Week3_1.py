@@ -50,9 +50,75 @@ def pythagorean_theorem(a, b):
     return c
 
     
-
 pythagorean_theorem(2,2)
 result = pythagorean_theorem(2,2)
 
 print(pythagorean_theorem(2,2))
 print(result)
+
+#def draw_side():
+ #   drawing_turtle.forward(100)
+  #  drawing_turtle.left(72)
+
+#import turtle
+#window = turtle.Screen()
+#window.bgcolor('light blue')
+#window.title('Pentagon')
+
+#drawing_turtle = turtle.Turtle()
+#drawing_turtle.pencolor('red')
+
+#for _ in range(5):
+#    draw_side
+#draw_side()
+#draw_side()
+#draw_side()
+#draw_side()
+#draw_side()
+
+#turtle.done
+
+import turtle
+
+shape = int(input("enter a number between 1 and three: "))
+
+def draw_triangle():
+    draw_side(200, 120)
+    draw_side(200, 120)
+    draw_side(200, 120)
+
+def draw_square():
+    draw_side(100, 90)
+    draw_side(100, 90)
+    draw_side(100, 90)
+    draw_side(100, 90)
+
+def draw_pentagon():
+    draw_side(50, 72)
+    draw_side(50, 72)
+    draw_side(50, 72)
+    draw_side(50, 72)
+    draw_side(50, 72)
+
+
+def draw_side(pixels, degrees):
+    drawing_turtle.forward(pixels)
+    drawing_turtle.left(degrees)
+
+
+window = turtle.Screen()
+
+drawing_turtle = turtle.Turtle()
+
+if shape == 1:
+    draw_triangle
+elif shape == 2:
+    draw_square
+elif shape == 3:
+    draw_pentagon
+else:
+    print("invalid number try again.")
+
+draw_triangle
+
+turtle.done

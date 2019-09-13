@@ -50,9 +50,9 @@ def get_xy_corordinate():
      x, y = input('Enter the x and the y coordinates').split(',')
      return int(x), int(y)
 
-point_1 = get_xy_corordinate
-point_2 = get_xy_corordinate
-point_3 = get_xy_corordinate
+point_1 = get_xy_corordinate()
+point_2 = get_xy_corordinate()
+point_3 = get_xy_corordinate()
 
 points = [point_1, point_2, point_3] #size of triangle
 
