@@ -11,63 +11,73 @@ def add(num_1, num_2):
 Define a function 'subtract' that accepts two numbers as arguments.
 Return the subtraction of the two numbers
 """
-
+def subtract(num_1, num_2):
+    return num_1 - num_2
 
 """
 Define a function 'integer_divide' that accepts two numbers as arguments.
 Return the Integer Division of the two numbers.
 Hint: https://www.w3schools.com/python/python_operators.asp
 """
-
+def integer_divide(num_1, num_2):
+    return num_1 // num_2
 
 """
 Define a function 'float_divide' that accepts two numbers as arguments.
 Return the Float Division of the two numbers.
 Hint: https://www.w3schools.com/python/python_operators.asp
 """
-
+def float_divide(num_1, num_2):
+    return num_1 / num_2
 
 """
 Define a function 'remainder_divide' that accepts two numbers as arguments.
 Return the Remainder Division of the two numbers.
 Hint: https://www.w3schools.com/python/python_operators.asp
 """
-
+def remainder_divide(num_1, num_2):
+    return num_1 % num_2
 
 """
 Define a function 'multiplication' that accepts two numbers as arguments.
 Return the multiplication of the two numbers.
 Hint: https://www.w3schools.com/python/python_operators.asp
 """
-
+def multiplication(num_1, num_2):\
+    return num_1 * num_2
 
 """
 Define a function 'power' that accepts two numbers as arguments.
 Return the power of the two numbers.
 Hint: https://www.w3schools.com/python/python_operators.asp
 """
-
+def power(num_1, num_2):
+    return num_1 ** num_2
 
 """
 Define a function 'convert_celsius_to_fahrenheit' that takes one argument, celsius.
 Using your defined arithmetic functions above, calculate the conversion.
 The formula is F = C * 1.8 + 32
 """
-
+def convert_celsius_to_fahrenheit(num_1):
+    result = multiplication(num_1, 1.8)
+    return add(result, 32)
 
 """
 Define a function 'convert_kilometers_to_miles' that takes one argument, kilometers.
 Using your defined arithmetic functions above, calculate the conversion.
 The formula is miles = kilometers * 0.6214
 """
-
+def convert_kilometers_to_miles(num_1):
+    return multiplication(num_1, 0.6214)
 
 """
 Define a function 'calculate_bmi' that takes two arguments, weight and height.
 Using your defined arithmetic functions above, calculate the bmi.
 the formula is bmi = (weight * 703) / (height ^ 2)
 """
-
+def calculate_bmi(num_1, num_2):
+    return float_divide(multiplication(num_1, 703), power(num_2, 2))
 
 """
 DO NOT TOUCH THE CODE BELOW

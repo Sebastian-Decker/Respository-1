@@ -13,8 +13,8 @@ def add(num_1, num_2):
 Define a function 'subtract' that accepts two numbers as arguments.
 Return the subtraction of the two numbers
 """
-def subtract(num_3, num_4):
-    return num_3 - num_4
+def subtract(num_1, num_2):
+    return num_1 - num_2
 
 """
 Define a function 'integer_divide' that accepts two numbers as arguments.
@@ -56,9 +56,6 @@ Define a function 'convert_celsius_to_fahrenheit' that takes one argument, celsi
 Using your defined arithmetic functions above, calculate the conversion.
 The formula is F = C * 1.8 + 32
 """
-def c(cel)
-result = myltiplacation(cel, 1.8)
-return add(result, 32)
 
 """
 Define a function 'convert_kilometers_to_miles' that takes one argument, kilometers.
