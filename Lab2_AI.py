@@ -34,11 +34,13 @@ Bonus EC: Figure out how to clear the playing field before the board is printed.
 Hint, it may be wise to 'import sys', but what from sys can we use???
 """
 def print_board(board):
-    print(
-        f'{board[0][0]} | {board[0][1]} | {board[0][2]}\n'
-        f'{board[1][0]} | {board[1][1]} | {board[1][2]}\n'
-        f'{board[2][0]} | {board[2][1]} | {board[2][2]}'
-    )
+    print(f'''
+        {board[0][0]} | {board[0][1]} | {board[0][2]}
+        ---------
+        {board[1][0]} | {board[1][1]} | {board[1][2]}
+        ---------
+        {board[2][0]} | {board[2][1]} | {board[2][2]}
+    ''')
 
 """
 Part 3: Making the move for the player
@@ -52,7 +54,16 @@ on the board. Just set it to the value PLAYER, which is 'X'.
 Bonus EC: Figure out a way checking whether or not the user made a valid choice.
 """
 def make_move(board):
-    input("enter the x,y pair for an available position").split(",")
+    #x = int(input('enter x'))
+    #y = int(input('enter y'))
+
+    #board[x][y] = PLAYER
+    
+    move = input("enter the x,y pair for an available position").split(',')
+    x = int(move[0])
+    y = int(move[1])
+
+    board[x][y] = PLAYER
 
 """
 Part 4: Checking the winning state
@@ -63,7 +74,17 @@ Using if/elif/else statments check whether or not that player has won the game a
 Note that there are a total of 8 potential ways of winning the game of Tic-Tac-Toe.
 """
 def winning(current_player, board):
-    if
+    if (board[0][0] == board[0][1] and board[0][1] == board[0][2] and board[0][0] == current_player) or \
+       (board[1][0] == board[1][1] and board[1][1] == board[1][2] and board[1][0] == current_player) or \
+       (board[2][0] == board[2][1] and board[2][1] == board[2][2] and board[2][0] == current_player) or \
+       (board[0][0] == board[1][0] and board[1][0] == board[2][0] and board[0][0] == current_player) or \
+       (board[0][1] == board[1][1] and board[1][1] == board[2][1] and board[0][1] == current_player) or \
+       (board[0][2] == board[1][2] and board[1][2] == board[2][2] and board[0][2] == current_player) or \
+       (board[0][0] == board[1][1] and board[1][1] == board[2][2] and board[0][0] == current_player) or \
+       (board[2][0] == board[1][1] and board[1][1] == board[0][2] and board[2][0] == current_player):
+        return True
+    else:
+        return False
 
 ##############################################################
 # Test Code
