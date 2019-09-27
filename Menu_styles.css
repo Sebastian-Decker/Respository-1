@@ -1,27 +1,26 @@
 body {
-    background-color: #B3193A
-    ;
+    background-color: #B3193A;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #9003CA
+    color: #9003CA;
 }
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-gap: 50px;
-    background-color: #CC1D42
+    background-color: #CC1D42;
 }
 h1 {
     text-align: center;
     font-size: 350%;
-    color: #612AAF;
-    background-color: #000000
+    color: #B34519;
+    background-color: #000000;
 }
 h2 {
     font-size: 250%;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #000000;
     color: #CF992D;
-    text-align: center
+    text-align: center;
 }
 p {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -41,5 +40,5 @@ p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     grid-gap: 50px;
-    background-color: #CC1D42
+    background-color: #CC1D42;
 }
