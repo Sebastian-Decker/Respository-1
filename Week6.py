@@ -59,6 +59,6 @@ while True:
     print(demerit_points)
 
 if demerit_points >= 12:
-    print("Go directly to jail, do not pass Go, do not collect $200")
+    print("License Suspended")
     break
 
