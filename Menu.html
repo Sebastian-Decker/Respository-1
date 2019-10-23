@@ -6,16 +6,19 @@
     </head>
     <body>
         <h1>MENU:</h1>
-        <nav id="main-nav">
-                <ul>
-                    <li><a href=index.html>Home</a></li>
-                    <li><a href=Menu.html>Menu</a></li>
-                    <li><a href=#>Home</a></li>
-                    <li><a href=#>Home</a></li>
-                    <li><a href=#>Home</a></li>
-                    <li><a href=#>Home</a></li>
-                </ul>
-            </nav>
+<nav>
+        <div class="burger burger-arrow" onclick="toggleMenu()">
+                <div class="burger-lines"></div>
+              </div>
+    <ul id="main-nav">
+        <li><a href=index.html>Home</a></li>
+        <li><a href=Menu.html>Menu</a></li>
+        <li><a href=#>Home</a></li>
+        <li><a href=#>Home</a></li>
+        <li><a href=#>Home</a></li>
+        <li><a href=#>Home</a></li>
+    </ul>
+</nav>
         <div class=container>
             <div>
                 <h2>Pizza:</h2>
@@ -67,6 +70,11 @@
             <img class=med src=Frappe-Coffee.JpG>
             <img class=small src=Pizza.JpG>
         </div>
+        <script type="text/javascript" src="include.js"></script>
+    <script>
+        includeHTML();
+        console.log("script called")</script>
+    <script type="text/javascript" src="togglemenu.js"></script>
     </body>
 
 </html>
