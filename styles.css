@@ -3,6 +3,9 @@ body {
     background-color: #402AAF;
     color: #ECFF01;
 }
+#cart content {
+    display: none;
+}
 #main {
     margin: 0%;
 }
