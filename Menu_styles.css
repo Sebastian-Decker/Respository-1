@@ -135,12 +135,12 @@ nav ul li {
         left: 0%;
         display: block;
         margin: 0em;
-        background-color: var(--purple1);
+        background-color: var(--red1);
         padding: .5em;
     }
     nav {
         position: fixed;
-        background-color: var(--purple2);
+        background-color: var(--red1);
         top: 0em;
         left: 0em;
         z-index: 2;
