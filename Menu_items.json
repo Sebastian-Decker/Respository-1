@@ -1,0 +1,28 @@
+{
+    "menu": [{
+        "name": "Gamer Fuel",
+        "items": [{
+            "name": "Pizza",
+            "description": "Hot cheesey pizza with toppings of your choice",
+            "image": "Pizza.jpg",
+            "price": 7
+        }, {
+            "name": "Hamburgers",
+            "description": "Big juicy hamburgers cooked rare, medium rare, well done, ect.",
+            "image": "burger.jpg",
+            "price": 5
+        }, {
+            "name": "Hotdogs",
+            "description": "A hotdog with your choice of condiments",
+            "image": "hot_dogs.jpg",
+            "price": 4
+        }, {
+            "name": "Sandwiches",
+            "description": "BLT, ham, chicken, beef, ect. come and see what else you can have on your sandwich",
+            "image": "BLT.jpg",
+            "price": 6
+        }, {
+            
+        }]
+    }]
+}
