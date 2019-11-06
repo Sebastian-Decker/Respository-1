@@ -22,7 +22,40 @@
             "image": "BLT.jpg",
             "price": 6
         }, {
-            
+            "name": "Salad",
+            "description": "Salad bar, make your own salad",
+            "image": "saladbar.jpg",
+            "price": 5
+        }, {
+            "name": "Chips",
+            "description": "Doritos, Fritos, Lays, etc",
+            "image": "Chips.jpg",
+            "price": 3
+        }, {
+            "name": "Pop/Soda",
+            "description": "Mountian dew, Pepsi, Coca cola, Sprite, Fanta, Ctush, etc.",
+            "image": "Pop.jpg",
+            "price": 4
+        }, {
+            "name": "Water",
+            "description": "Clean water, the cleanest water",
+            "image": "Water.jpg",
+            "price": 2
+        }, {
+            "name": "Coffee",
+            "description": "Coffee the way you like it",
+            "image": "Frappe-Coffee.jpg",
+            "price": 5
+        }, {
+            "name": "Energy drinks",
+            "description": "Venom, Monster, Rockstar, Red Bull, etc.",
+            "image": "Energy_Drinks.jpg",
+            "price": 2
+        }, {
+            "name": "Shakes",
+            "description": "Chocolate, Vanilla, Strawberry, etc; with toppings of your choice",
+            "image": "Shakes.jpg",
+            "price": 4
         }]
     }]
 }
