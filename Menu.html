@@ -21,8 +21,8 @@
     </ul>
 </nav>
 <section w3-include-html="cart.html"></section>
-        <div class=container>
-            <div>
+        <div id=menu class=container>
+            <!-- <div>
                 <h2>Pizza:</h2>
                 <p>Cheese $8, Peperoni $10, Sausage $10, Meatlovers $12, Supreme $15.</p>
             </div>
@@ -65,20 +65,18 @@
             <div>
                 <h2>Shakes:</h2>
                 <p>Chocolate $5, Vanilla $5; toppings include: Fudge, Whipped cream, Starwberry syrup, Cherry.</p>
-            </div>
-        </div>
-        <div class=grid>
-            <img class=small src=BLT.JpG>
-            <img class=med src=Frappe-Coffee.JpG>
-            <img class=small src=Pizza.JpG>
+            </div> -->
         </div>
         <script type="text/javascript" src="include.js"></script>
+        <script type="text/javascript" src="togglemenu.js"></script>
+        <script type="text/javascript" src="togglecart.js"></script>
+        <script type="text/javascript" src="Fill-food-menu.js"></script>
+        <script type="text/javascript" src="online_order.js"></script>
     <script>
         includeHTML();
-        console.log("script called")</script>
-    <script type="text/javascript" src="togglemenu.js"></script>
-    <script type="text/javascript" src="togglecart.js"></script>
-    <script type="text/javascript" src="fill-food-menu.js"></script>    
+        console.log("script called")
+        populateFood();
+        </script>    
     </body>
 
 </html>

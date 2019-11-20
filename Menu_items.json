@@ -1,61 +1,111 @@
 {
     "menu": [{
-        "name": "Gamer Fuel",
+        "name": "Pizza",
         "items": [{
-            "name": "Pizza",
-            "description": "Hot cheesey pizza with toppings of your choice",
-            "image": "Pizza.jpg",
-            "price": 7
-        }, {
-            "name": "Hamburgers",
-            "description": "Big juicy hamburgers cooked rare, medium rare, well done, ect.",
-            "image": "burger.jpg",
+            "name": "Cheese pizza",
+            "description": "Hot cheesey pizza.",
             "price": 5
         }, {
-            "name": "Hotdogs",
-            "description": "A hotdog with your choice of condiments",
+            "name": "Pepperoni pizza",
+            "description": "Cheese pizza with Pepperoni on it",
+            "image": "Pizza.jpg",
+            "price": 6
+        }, {
+            "name": "Supreme Pizza",
+            "description": "Pepperoni, Sausage, Mushrooms, Bacon, Onions, and Olives",
+            "price": 8
+        }]
+    }, {"name": "Hamburgers",
+        "items": [
+            {
+            "name": "Cheese burger",
+            "description": "A Burgar cooked to your liking with Cheese melted on it",
+            "price": 5
+        }, {
+            "name": "Bacon burger",
+            "description": "A Cheese burgar with Bacon added to it for an enhanced flavor",
+            "price": 6
+        }, {
+            "name": "Pro burger",
+            "description": "A Hamburgar with Cheese, Lettuce, Tomato, and Onion",
+            "image": "burger.jpg",
+            "price": 9
+        }]
+    }, {"name": "Sandwiches",
+        "items": [
+            {
+            "name": "Sub",
+            "description": "Roast beef, Chicken, or Ham, with a choice of condiments",
+            "price": 7
+        }, {
+            "name": "BLT",
+            "description": "Bacon, Lettuce, and Tomato",
+            "image": "BLT.jpg",
+            "price": 7
+        }]
+        }, {"name": "Hotdogs",
+        "items": [
+            {
+            "name": "Hotdog",
+            "description": "A Hotdog on a bun with your choice of condiments",
             "image": "hot_dogs.jpg",
             "price": 4
         }, {
-            "name": "Sandwiches",
-            "description": "BLT, ham, chicken, beef, ect. come and see what else you can have on your sandwich",
-            "image": "BLT.jpg",
-            "price": 6
-        }, {
-            "name": "Salad",
-            "description": "Salad bar, make your own salad",
-            "image": "saladbar.jpg",
+            "name": "Cheese dog",
+            "description": "A Hotdog with cheese in it",
             "price": 5
         }, {
+            "name": "Brat",
+            "description": "A Bratwurst on a bun instead of a Hotdog",
+            "price": 5
+        }]
+    }, {"name": "SaladS",
+        "items": [
+            {
+            "name": "Fruit salad",
+            "description": "A fruit Salad with your choice of dressing",
+            "image": "Fruit-Salad.jpg",
+            "price": 6
+        }, {
+            "name": "Tuna salad",
+            "description": "Tuna mixxed with Mayo plus some Celery, Relish, or Onion if wanted",
+            "price": 6
+        }, {
+            "name": "Caesar salad",
+            "description": "Lettuce and Crutons dressed with Lemon juice, Olive oil, Egg, Garlic, and Parmesan cheese",
+            "price": 6
+        }]
+    }, {"name": "Chips",
+        "items": [
+            {
             "name": "Chips",
             "description": "Doritos, Fritos, Lays, etc",
             "image": "Chips.jpg",
-            "price": 3
+            "price": 2
+        }]
+    }, {"name": "Drinks",
+        "items": [
+            {
+            "name": "Water",
+            "description": "Fresh, clean water",
+            "price": 2
         }, {
             "name": "Pop/Soda",
             "description": "Mountian dew, Pepsi, Coca cola, Sprite, Fanta, Ctush, etc.",
-            "image": "Pop.jpg",
-            "price": 4
-        }, {
-            "name": "Water",
-            "description": "Clean water, the cleanest water",
-            "image": "Water.jpg",
-            "price": 2
-        }, {
-            "name": "Coffee",
-            "description": "Coffee the way you like it",
-            "image": "Frappe-Coffee.jpg",
-            "price": 5
+            "price": 3
         }, {
             "name": "Energy drinks",
             "description": "Venom, Monster, Rockstar, Red Bull, etc.",
             "image": "Energy_Drinks.jpg",
-            "price": 2
+            "price": 3
+        }, {
+            "name": "Coffee",
+            "description": "Coffee the way you like it",
+            "price": 4
         }, {
             "name": "Shakes",
             "description": "Chocolate, Vanilla, Strawberry, etc; with toppings of your choice",
             "image": "Shakes.jpg",
-            "price": 4
+            "price": 5
         }]
-    }]
-}
+}]}
