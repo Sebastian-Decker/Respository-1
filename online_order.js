@@ -1,7 +1,7 @@
 let cartTable;
 
 // regular named function
-function makeCartRow(item, price) {
+function makeCartRow(item, price, quantity) {
     const row = document.createElement("tr");
     // td is table data
     const itemData = document.createElement("td");
@@ -10,6 +10,9 @@ function makeCartRow(item, price) {
     const priceData = document.createElement("td");
     priceData.innerText = price;
     row.appendChild(priceData);
+    const quantitydata = document.createElement("td");
+    quantitydata.innerText = quantity;
+    row.appendChild(quantitydata)
     return row;
 }
 
@@ -19,11 +22,21 @@ let exampleArray = [{ item: "soup", price: 3 },
 ]
 
 const rowFromItem = function(value) {
-    cartTable.appendChild(makeCartRow(value.name, '$' + value.price));
+    cartTable.appendChild(makeCartRow(value.element.name, '$' + value.element.price, value.quantity));
 }
 
 // anonymous function as a variable
 const updateCart = async function(array) {
+    itemMap = new Map();
+    array.forEach(element => {
+        if (!Array.from(itemMap.keys()).includes(element.name)) {
+            itemMap.set(element.name, {element, quantity: 1 });
+            console.dir(itemMap);
+        } else {
+            itemMap[element.name].quantity++;
+            console.log(itemMap[element.name].quantity);
+        }
+    });
     cartTable = document.getElementById("cart-content"); // step 1: get parent element
     console.log("called updateCart");
     console.dir(cartTable);
@@ -39,7 +52,7 @@ const updateCart = async function(array) {
     if (!array) {
         array = [];
     }
-    array.forEach(rowFromItem);
+    itemMap.forEach(rowFromItem);
     const totalRow = document.createElement("tr"); // step 2 new element
     const totalHeader = document.createElement("th");
     const totalAmount = document.createElement("th");
