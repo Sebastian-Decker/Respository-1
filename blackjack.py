@@ -90,7 +90,7 @@ class Deck:
             for number in numbers:
                 Number = Card(number, suit)
             for facecard in FACE_CARDS:
-                Facecard = FACE_CARDS(number, suit)
+                Facecard = FaceCard(number, suit)
             AceCard
         return Deck 
         ###################################################################
@@ -105,7 +105,7 @@ class Deck:
         size = len(self.__cards)
         if size == 0:
             self.__cards = self.__load_deck()
-        self.__cards.pop()
+        return self.__cards.pop()
         
         ###################################################################
 
@@ -149,8 +149,7 @@ class Hand:
         """
         self.__index = 1
         ###################################################################
-        self.__cards.clear
-
+        self.__cards = []
 
         ###################################################################
     
@@ -160,8 +159,7 @@ class Hand:
         into the hole; otherwise, the card should be showing.
         """
         ###################################################################
-        
-
+        self.__cards.append(card)
 
         ###################################################################
 
@@ -170,8 +168,10 @@ class Hand:
         Loops over the Cards in the Hand and returns the soft score
         """
         ###################################################################
-
-
+        soft_score = 0
+        for card in self.__cards:
+            soft_score += card.soft_value() 
+        return soft_score
 
         ###################################################################
 
@@ -180,8 +180,10 @@ class Hand:
         Loops over the Cards in the Hand and returns the hard score
         """
         ###################################################################
-
-
+        hard_score = 0
+        for card in self.__cards:
+            hard_score += card.hard_value()
+        return hard_score
 
         ###################################################################
 
@@ -248,8 +250,13 @@ class Game(object):
         returns False.
         """
         ###################################################################
+        hard_score = self.__player.get_hard_score()
 
+        if hard_score > 21:
+            return True
 
+        else:
+            return False
 
         ###################################################################
 
@@ -274,8 +281,33 @@ class Game(object):
         Checks for the winning states. See README for winnings states.
         """
         ###################################################################
+        soft_scoreP = self.__player.get_soft_score()
+        hard_scoreP = self.__player.get_hard_score()
+        soft_scoreD = self.__dealer.get_soft_score()
+        hard_scoreD = self.__dealer.get_hard_score()
 
-
+        if soft_scoreP > 21:
+            if hard_scoreP > 21:
+                print("Dealer Wins!")
+        if soft_scoreD > 21:
+            if hard_scoreD > 21:
+                print("Player Wins!")
+        elif soft_scoreP == 21:
+            print("Player Wins!")
+        elif hard_scoreP == 21:
+            print("Player Wins!")
+        elif soft_scoreD == 21:
+            print("Dealer Wins!")
+        elif hard_scoreD == 21:
+            print("Dealer Wins!")
+        elif soft_scoreP == 21 and soft_scoreD == 21:
+            print("Player Wins!")
+        elif soft_scoreP == 21 and hard_scoreD == 21:
+            print("Player Wins!")
+        elif hard_scoreP == 21 and soft_scoreD == 21:
+            print("Player Wins!")
+        elif hard_scoreP == 21 and hard_scoreD == 21:
+            print("Player Wins!")
 
         ###################################################################
 
