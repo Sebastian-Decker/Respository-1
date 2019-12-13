@@ -33,8 +33,8 @@ const updateCart = async function(array) {
             itemMap.set(element.name, {element, quantity: 1 });
             console.dir(itemMap);
         } else {
-            itemMap[element.name].quantity++;
-            console.log(itemMap[element.name].quantity);
+            itemMap.get(element.name).quantity++;
+            console.log(itemMap.get(element.name).quantity);
         }
     });
     cartTable = document.getElementById("cart-content"); // step 1: get parent element

@@ -25,7 +25,7 @@ class Card(object):
         self.__rank = rank
     
     def __str__(self):
-        return f"{self.__rank}{self.__rank}"
+        return f"{self.__rank}{self.__suit}"
 
     def soft_value(self):
         return self.__rank
@@ -84,15 +84,20 @@ class Deck:
         contain, 2-10, J, Q, K, A.
         """
         ###################################################################
-        numbers = ['2', '3', '4', '5', '6', '7', '8', '9', '10']
+        numbers = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+        deck = []
 
         for suit in SUITS:
             for number in numbers:
                 Number = Card(number, suit)
+                deck.append(Number)
             for facecard in FACE_CARDS:
-                Facecard = FaceCard(number, suit)
-            AceCard
-        return Deck 
+                Facecard = FaceCard(facecard, suit)
+                deck.append(Facecard)
+            Acecard = AceCard(suit)
+            deck.append(Acecard)
+        self.__shuffle(deck)
+        return deck 
         ###################################################################
 
     def deal_card(self):
@@ -307,6 +312,10 @@ class Game(object):
         elif hard_scoreP == 21 and soft_scoreD == 21:
             print("Player Wins!")
         elif hard_scoreP == 21 and hard_scoreD == 21:
+            print("Player Wins!")
+        elif hard_scoreP < hard_scoreD <= 21:
+            print("Dealer Wins!")
+        elif hard_scoreD < hard_scoreP <= 21:
             print("Player Wins!")
 
         ###################################################################
